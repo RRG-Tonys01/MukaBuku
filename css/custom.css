@@ -1,3 +1,29 @@
+#left-content{
+    width: 333px;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
 #left-content:hover{
     overflow-y: scroll;
 }
+
+#left-content::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#contacts{
+    width: 300px;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+#contacts:hover{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#contacts::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+

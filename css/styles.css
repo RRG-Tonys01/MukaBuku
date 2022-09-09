@@ -759,6 +759,17 @@ video {
   overflow-y: scroll;
 }
 
+.scrollbar-width-auto{
+  scrollbar-width: auto;
+}
+
+.scrollbar-width-thin{
+  scrollbar-width: thin;
+}
+.scrollbar-width-none{
+  scrollbar-width: none;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
