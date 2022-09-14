@@ -274,6 +274,7 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+/* Background Color Start */
 .bg-transparent {
   background-color: transparent;
 }
@@ -321,7 +322,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
 }
+/* Background Color End */
 
+/* Hover Background Start */
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
@@ -336,12 +339,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
+/* Hover Background End */
 
+/* Hover Link Start */
 .hover\:underline:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+/* Hover Link End */
 
+
+/* Dark Mode Start*/
 .dark .dark\:bg-dark-main {
   --tw-bg-opacity: 1;
   background-color: rgba(24, 25, 26, var(--tw-bg-opacity));
@@ -380,11 +388,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(78, 79, 80, var(--tw-bg-opacity));
 }
+/* Dark Mode End */
 
+/* Opacity Start*/
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
+/* Opacity End */
 
+/* Border Color Start*/
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -409,7 +421,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgba(59, 130, 246, var(--tw-border-opacity));
 }
+/* Border Color End*/
 
+/* Border Dark Mode Start */
 .dark .dark\:border-blue-700 {
   --tw-border-opacity: 1;
   border-color: rgba(29, 78, 216, var(--tw-border-opacity));
@@ -424,7 +438,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgba(58, 59, 60, var(--tw-border-opacity));
 }
+/* Border Dark Mode End */
 
+/* Border Radius Start */
 .rounded {
   border-radius: 0.25rem;
 }
@@ -448,7 +464,9 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+/* Border Radius End */
 
+/* Border Width Start */
 .border-2 {
   border-width: 2px;
 }
@@ -484,11 +502,15 @@ video {
 .border-r {
   border-right-width: 1px;
 }
+/* Border Width End */
 
+/* Cursor Start*/
 .cursor-pointer {
   cursor: pointer;
 }
+/* Cursor End */
 
+/* Display Start */
 .block {
   display: block;
 }
@@ -520,7 +542,9 @@ video {
 .group:hover .group-hover\:inline-block {
   display: inline-block;
 }
+/* Display End */
 
+/* Flex Direction Start*/
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -528,6 +552,7 @@ video {
 .flex-col {
   flex-direction: column;
 }
+/* Flex Direction End */
 
 .place-items-center {
   place-items: center;
