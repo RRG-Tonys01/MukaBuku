@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangara Media</title>
+
+    <!-- CSS LIBARY -->
+    <link rel="shortcut icon" href="./images/logo/tm/tm_logo.png" type="image/png" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+</head>
+<body class="bg-gray-100 dark:bg-dark-main">
+    <!-- NAVBAR START -->
+    <nav class="bg-white dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 border-b dark:border-dark-third">
+        <!-- NAVBAR LEFT START-->
+        <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 py-2">
+            <!-- LOGO START -->
+            <a href="index.html" class="mr-2 hidden md:inline-block">
+                <img src="./images/logo/tm/tm_logo.png" alt="Facebook logo" class="w-24 sm:w-20 lg:w-10 h-auto"/>
+            </a>
+            <a href="index.html" class="inline-block md:hidden">
+                <img src="./images/logo/tm/tm_text_logo.png" alt="" class="w-32 h-auto" />
+            </a>
+            <!-- LOGO END -->
+
+            <!-- SEARCH BAR START -->
+            <div class="flex items-center justify-between space-x-1">
+                <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-10 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center justify-center cursor-pointer">
+                    <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                    <input type="text" placeholder="Search Facebook" class="outline-none bg-transparent hidden xl:inline-block"/>
+                </div>
+            </div>
+            <!-- SEARCH BAR END -->
+        </div>
+        <!-- NAVBAR LEFT END -->
+
+        <!-- NAV CENTER START-->
+        <ul class="flex w-full lg:w-max items-center justify-center">
+            <li class="w-1/5 md:w-max text-center">
+                <a href="index.html" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class='bx bx-home'></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="friends.html" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class="bx bx-group"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="watch.html" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class="bx bx-slideshow"></i>
+                    <span class="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center hidden md:inline-block">
+                <a href="news.html"class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class="bx bx-layout"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center inline-block md:hidden">
+                <a href="notif.html" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-blue-500 border-b-4 border-blue-500 relative">
+                    <i class="bx bxs-bell"></i>
+                    <span class="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center inline-block xl:hidden">
+                <a ref="menu.html" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class="bx bx-menu"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- NAV CENTER END -->
+
+        <!-- NAV RIGHT END-->
+        <ul class="hidden md:flex mx-4 items-center justify-center">
+            <li>
+                <div class="text-xl hidden xl:grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <i class="bx bxs-grid"></i>
+                </div>
+            </li>
+            <li>
+                <div class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <i class="bx bxl-messenger"></i>
+                    <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </div>
+            </li>
+            <li>
+                <div class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <i class="bx bxs-bell"></i>
+                    <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </div>
+            </li>
+            <li class="h-full hidden xl:flex">
+                <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
+                    <img src="./images/photos/User/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7"/>
+                    <span class="mx-2 font-semibold dark:text-dark-txt">Tonys01</span>
+                </a>
+            </li>
+        </ul>
+        <!-- NAVBAR RIGHT END -->
+    </nav>
+    <!-- NAVBAR END -->
+  
+    <!-- MOBILE HEADER START -->
+    <div class="md:hidden w-full pt-14">
+        <div class="w-full flex justify-between items-center fixed bg-white dark:bg-dark-second z-40">
+            <span class="font-medium text-2xl dark:text-dark-txt px-4">Notification</span>
+            <div class="flex items-center justify-between p-2 space-x-2 px-3">
+                <div class="text-2xl grid place-items-center bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth">
+                    <i class="bx bx-search-alt-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE HEADER END -->
+
+        <!-- TABLET to DESKTOP VIEW START-->
+        <div class="w-full hidden md:block md:w-3/4 pt-14 px-7 h-full absolute top-0 right-0">
+            <div class="bg-white fixed right-0 w-1/4 h-4/5" id="conversations">
+                <div class="flex justify-between items-center text-xl px-4 mt-4" >
+                    <div class="font-semibold dark:text-dark-txt"> 
+                      Conversation
+                    </div>
+                    <!-- <span class="text-blue-500 cursor-pointer text-lg hover:bg-gray-200 dark:hover:bg-dark-third rounded-md p-1">See all</span> -->
+                </div>
+                <div class="px-2 my-2">
+                    <!-- SEARCH BAR START -->
+                    <div class="flex items-center justify-between space-x-1">
+                        <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 rounded-full flex items-center justify-center cursor-pointer">
+                            <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                            <input type="text" placeholder="Search Message" class="outline-none bg-transparent hidden xl:inline-block"/>
+                        </div>
+                    </div>
+                    <!-- SEARCH BAR END -->
+                </div>
+                <!-- LINE SEPARATE START -->
+                <!-- <div class="border-b-1 border-gray-200 dark:border-dark-third"></div> -->
+                <!-- lINE SEPARATE END -->
+                <!-- Message From Friends Start -->
+                <ul class="p-2">
+                    <li>
+                        <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/photos/40x40/member5.png" alt="Mark Zuckerberg" class="rounded-full">
+                                <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                            </div>                                
+                            <div class="dark:text-dark-txt">
+                                <span class="font-medium">Mark Zuckerberg</span>
+                                <span class="float-right text-gray-500 text-sm right-0">1d</span>
+                                <br>
+                                <span class="text-sm text-blue-500">Lorem ipsum dolor sit amet conse......</span>
+                                <span class="bg-blue-500 absolute w-4 h-4 right-16 mb-4 rounded-full border-white border-2"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/photos/40x40/member4.png" alt="Mark Zuckerberg" class="rounded-full">
+                                <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold">Dog Tah</span>
+                                <span class="float-right text-gray-500 text-sm right-0">90d</span>
+                                <br>
+                                <span class="text-sm">You : Lorem ipsum dolor sit, amet. ...</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/photos/40x40/member6.png" alt="Mark Zuckerberg" class="rounded-full">
+                                <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold">Rorona Botako</span>
+                                <span class="float-right text-gray-500 text-sm right-0">10mins</span>
+                                <br>
+                                <span class="text-sm">You : Lorem ipsum dolor sit, amet. ...</span>
+                                <!-- <span class="bg-blue-500 absolute w-4 h-4 right-16 mb-4 rounded-full border-white border-2"></span> -->
+                                <span class="absolute w-4 h-4 right-16 mb-4 rounded-full" style="background-image: url('./images/photos/40x40/member6.png');"></span>
+                                <!-- <img src="./images/photos/40x40/member6.png" alt="Mark Zuckerberg" class="absolute w-4 h-4 right-16 mb-4 rounded-full"> -->
+                            </div>
+                        </div>                       
+                    </li>
+                </ul>
+                <!-- Message From Friends End -->
+            </div>
+        </div>
+        <!-- TABLET to DESKTOP VIEW END-->
+
+
+    <!-- MOBILE VIEW START -->
+    <div class="md:hidden w-full h-full pt-16 bg-white dark:bg-dark-second">  
+        <!-- MOBILE VIEW SUBHEADER START -->
+        <!-- <div class="flex pt-11 space-x-2 px-4">
+          <span class="py-2 px-3 font-medium bg-gray-200 dark:bg-dark-third rounded-full hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer">Suggestions</span>
+          <span class="py-2 px-3 font-medium bg-gray-200 dark:bg-dark-third rounded-full hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer">Your Friends</span>
+        </div> -->
+        <div class="flex justify-between items-center text-xl px-4" >
+          <div class="font-semibold dark:text-dark-txt"> 
+            Newest
+          </div>
+          <!-- <span class="text-blue-500 cursor-pointer text-lg hover:bg-gray-200 dark:hover:bg-dark-third rounded-md p-1">See all</span> -->
+        </div>
+        <!-- MOBILE VIEW SUBHEADER END -->
+  
+        <!-- LINE SEPARATE START -->
+        <div class="border-b border-gray-200 dark:border-dark-third mb-2"></div>
+        <!-- LINED SEPARATE END -->
+  
+        <!-- News Notification Start -->
+        <div class="bg-white dark:bg-dark-second px-2">
+          <div>
+            <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+              <img src="./images/photos/720x884/girl1.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+              <div class="flex-1 h-full w-full">
+                <div class="dark:text-dark-txt text-lg text-justify">
+                    <b class="text-lg">Cewek Jepang</b> 
+                    <span class="text-sm">Sedang menyiarkan siaran langsung: "Lorem ipsum dolor sit amet."</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-gray-500 dark:text-dark-txt">1 Jam yang lalu</span>
+                </div>
+              </div>
+              <span class="float-right text-gray-500 text-sm top-0">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+            </span>
+            </a>
+          </div>
+  
+          <div>
+            <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+              <img src="./images/photos/720x884/girl2.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+              <div class="flex-1 h-full">
+                <div class="dark:text-dark-txt text-lg text-justify">
+                    <span class="font-medium">GDarkness Stream</span> 
+                    <span class="text-sm">Memposting 3 Video baru, termasuk : "Lorem ipsum dolor sit amet."</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-gray-500 dark:text-dark-txt">1 Jam yang lalu</span>
+                </div>
+              </div>
+              <span class="float-right text-gray-500 text-sm top-0">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+            </span>
+            </a>
+          </div>
+  
+          <div>
+            <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+              <img src="./images/photos/720x884/girl3.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+              <div class="flex-1 h-full">
+                <div class="dark:text-dark-txt text-lg">
+                  <span class="font-medium">Cewek Jepang</span>
+                  <span class="float-right text-gray-500 text-sm">8d</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member2.png" alt="Friend" class="rounded-full" />
+                  </span>
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member13.png" alt="Friend" class="rounded-full"/>
+                  </span>
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member3.png" alt="Friend" class="rounded-full"/>
+                  </span>
+                  <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">25 mutual friends</span>
+                </div>
+                <div class="flex space-x-2 pt-1">
+                  <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                    Confirm
+                  </div>
+                  <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                    Remove
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div>
+            <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+              <img src="./images/photos/720x884/girl4.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+              <div class="flex-1 h-full">
+                <div class="dark:text-dark-txt text-lg">
+                  <span class="font-medium">Cewek Bumi</span>
+                  <span class="float-right text-gray-500 text-sm">4w</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member9.png" alt="Friend" class="rounded-full" />
+                  </span>
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member6.png" alt="Friend" class="rounded-full"/>
+                  </span>
+                  <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">3 mutual friends</span>
+                </div>
+                <div class="flex space-x-2 pt-1">
+                  <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                    Confirm
+                  </div>
+                  <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                    Remove
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div>
+            <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+              <img src="./images/photos/720x884/girl7.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+              <div class="flex-1 h-full">
+                <div class="dark:text-dark-txt text-lg">
+                  <span class="font-medium">Cewek Mamba</span>
+                  <span class="float-right text-gray-500 text-sm">10w</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                    <img src="./images/photos/40x40/member2.png" alt="Friend" class="rounded-full" />
+                  </span>
+                  <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">27 mutual friends</span>
+                </div>
+                <div class="flex space-x-2 pt-1">
+                  <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                    Confirm
+                  </div>
+                  <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                    Remove
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <!-- <div class="w-full bg-gray-200 hover:bg-gray-300 cursor-pointer py-2 mt-4 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg">See all</div>
+          <div class="border-b border-gray-200 dark:border-dark-third my-4"></div>
+          <span class="font-semibold dark:text-dark-txt text-xl">People You May Know</span> -->
+        </div>
+        <!-- News Notification End -->
+      </div>
+      <!-- MOBILE VIEW END -->
+</body>
+</html>
