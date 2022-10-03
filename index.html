@@ -84,7 +84,11 @@
         </li>
 
         <li>
-          <div class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+          <div
+            id="nav-right-messager" 
+            class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-blue-500 relative" 
+            onclick="showMessage()"
+          >
             <i class="bx bxl-messenger"></i>
             <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
           </div>
@@ -976,6 +980,81 @@
           <!-- Contact End -->
        </div>
       </div>
+      <!-- RIght Content End -->
+
+      <!-- Conversations Start -->
+      <div class="w-full md:block md:w-3/4 pt-14 px-7 h-full absolute top-0 right-0">
+          <div class="bg-white fixed right-0 w-1/4 h-4/5 hidden" id="conversations">
+              <div class="flex justify-between items-center text-xl px-4 mt-4" >
+                  <div class="font-semibold dark:text-dark-txt"> 
+                    Conversation
+                  </div>
+                  <!-- <span class="text-blue-500 cursor-pointer text-lg hover:bg-gray-200 dark:hover:bg-dark-third rounded-md p-1">See all</span> -->
+              </div>
+              <div class="px-2 my-2">
+                  <!-- SEARCH BAR START -->
+                  <div class="flex items-center justify-between space-x-1">
+                      <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 rounded-full flex items-center justify-center cursor-pointer">
+                          <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                          <input type="text" placeholder="Search Message" class="outline-none bg-transparent hidden xl:inline-block"/>
+                      </div>
+                  </div>
+                  <!-- SEARCH BAR END -->
+              </div>
+             
+              <!-- Message From Friends Start -->
+              <ul class="p-2">
+                  <li>
+                      <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                          <div class="relative">
+                              <img src="./images/photos/40x40/member5.png" alt="Mark Zuckerberg" class="rounded-full">
+                              <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                          </div>                                
+                          <div class="dark:text-dark-txt">
+                              <span class="font-medium">Mark Zuckerberg</span>
+                              <span class="float-right text-gray-500 text-sm right-0">1d</span>
+                              <br>
+                              <span class="text-sm text-blue-500">Lorem ipsum dolor sit amet conse......</span>
+                              <span class="bg-blue-500 absolute w-4 h-4 right-16 mb-4 rounded-full border-white border-2"></span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                          <div class="relative">
+                              <img src="./images/photos/40x40/member4.png" alt="Mark Zuckerberg" class="rounded-full">
+                              <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                          </div>
+                          <div>
+                              <span class="font-semibold">Dog Tah</span>
+                              <span class="float-right text-gray-500 text-sm right-0">90d</span>
+                              <br>
+                              <span class="text-sm">You : Lorem ipsum dolor sit, amet. ...</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                          <div class="relative">
+                              <img src="./images/photos/40x40/member6.png" alt="Mark Zuckerberg" class="rounded-full">
+                              <span class="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                          </div>
+                          <div>
+                              <span class="font-semibold">Rorona Botako</span>
+                              <span class="float-right text-gray-500 text-sm right-0">10mins</span>
+                              <br>
+                              <span class="text-sm">You : Lorem ipsum dolor sit, amet. ...</span>
+                              <!-- <span class="bg-blue-500 absolute w-4 h-4 right-16 mb-4 rounded-full border-white border-2"></span> -->
+                              <span class="absolute w-4 h-4 right-16 mb-4 rounded-full" style="background-image: url('./images/photos/40x40/member6.png');"></span>
+                              <!-- <img src="./images/photos/40x40/member6.png" alt="Mark Zuckerberg" class="absolute w-4 h-4 right-16 mb-4 rounded-full"> -->
+                          </div>
+                      </div>                       
+                  </li>
+              </ul>
+              <!-- Message From Friends End -->
+          </div>
+      </div>
+      <!-- Conversations End -->
     </div>
     <!-- Main Content End -->
     
