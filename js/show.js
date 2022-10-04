@@ -6,3 +6,7 @@ function showMessage(){
     nav_message.classList.toggle("bg-blue-500");
     nav_message.classList.toggle("hover:bg-blue-500");
 }
+
+function showMoreList(){
+    alert("Message Box Will Be Show Up!!!");
+}

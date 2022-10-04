@@ -171,8 +171,11 @@
             </li>
           </div>
           <!-- Hidden List End -->
-          <li class="cursor-pointer" onclick="showMore()">
-            <a class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+          <li>
+            <a 
+              class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third cursor-pointer"
+              onclick="showMoreList()"
+            >
               <span class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-second">
                 <i class='bx bxs-chevron-down'></i>
               </span>
@@ -219,6 +222,14 @@
                 <i class='bx bxs-chevron-down'></i>
               </span>
               <span class="font-semibold">See more</span>
+            </a>
+          </li> -->
+          <!-- <li class="cursor-pointer" onclick="showMore()">
+            <a class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+              <span class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-second">
+                <i class='bx bxs-chevron-down'></i>
+              </span>
+              <span class="font-semibold" id="see-more-less">See More</span>
             </a>
           </li> -->
         </ul>
@@ -993,11 +1004,11 @@
               </div>
               <div class="px-2 my-2">
                   <!-- SEARCH BAR START -->
-                  <div class="flex items-center justify-between space-x-1">
-                      <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 rounded-full flex items-center justify-center cursor-pointer">
-                          <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
-                          <input type="text" placeholder="Search Message" class="outline-none bg-transparent hidden xl:inline-block"/>
-                      </div>
+                  <div class="items-center justify-between space-x-1">
+                    <div class="w-full bg-gray-100 dark:bg-dark-third px-2 py-2 rounded-full flex items-center  cursor-pointer">
+                        <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                        <input type="text" placeholder="Search Message" class="outline-none bg-transparent hidden xl:inline-block"/>
+                    </div>
                   </div>
                   <!-- SEARCH BAR END -->
               </div>
